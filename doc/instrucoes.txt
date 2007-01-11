@@ -1,5 +1,6 @@
 KAOS.WebControls
 luis@planobe.com.br
+jean@planobe.com.br
 
 Biblioteca de controles para asp.net feito em C# e JavaScript. Release inicial em 11/03/2005. 
 Testado no framework 1.1. Desenvolvido no VS 2002, e VS 2003.
