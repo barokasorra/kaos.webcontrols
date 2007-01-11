@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KAOS.WebControls</name>
+    </assembly>
+    <members>
+        <member name="T:KAOS.WebControls.ComboPopUp">
+            <summary>
+            Summary description for ModalWindow.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ModalWindow">
+            <summary>
+            Summary description for ModalWindow.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ContentBar">
+            <summary>
+            Summary description for ContentBar.
+            </summary>
+            	
+        </member>
+        <member name="T:KAOS.WebControls.ContentBarDesign">
+            <summary>
+            Summary description for RichEditDesign.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.DataGridGrouped">
+            <summary>
+            Summary description for DataGridGrouped.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.Edit">
+            <summary>
+            Summary description for Edit.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditDate">
+            <summary>
+            Summary description for EditDate.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditDatePopUp">
+            <summary>
+            Summary description for EditDatePopUp.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditEmail">
+            <summary>
+            Summary description for EditEmail.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditMask">
+            <summary>
+            Summary description for EditMask.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditMoney">
+            <summary>
+            Summary description for EditMoney.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditNumber">
+            <summary>
+            Summary description for EditNumber.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.EditTime">
+            <summary>
+            Summary description for EditEmail.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ExpandingButton">
+            <summary>
+            A clientscript-enabled push-style button which toggles the visibility of another control on the page.
+            </summary>
+            <remarks>
+            This button has no server-side click event, as the action it performs is done on the clientside.
+            </remarks>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.CreateChildControls">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.CreateChildControls"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.OnPreRender(System.EventArgs)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)"/>
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.ApplyExpansionState">
+            <summary>
+            Applies the <see cref="P:KAOS.WebControls.ExpandingButton.Expanded"/> value to the server control set by <see cref="P:KAOS.WebControls.ExpandingButton.ControlToToggle"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.ClientExpanedStateChanged(System.Object,System.EventArgs)">
+            <summary>
+            when clientside rendering is enabled, this will alert the control to clientside changes in the Expanded state.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.button_Click(System.Object,System.EventArgs)">
+            <summary>
+            If the button is clicked serverside, that means the clientscript didnt' run.
+            toggle the expansion now.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButton.RegisterClientScript">
+            <summary>
+            Registers the clientscript with the page.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingButton.ControlToToggle">
+            <summary>
+            Gets or sets the ID of the control which is the target of the visibility-toggling behavior.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingButton.Expanded">
+            <summary>
+            Gets or sets the expanded state of the target control.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingButton.EnableClientScript">
+            <summary>
+            Gets or sets the indicator of whether clientscript is used for the behavior.
+            </summary>
+            <remarks>
+            When set to false, a postback is performed in order to set the visibility of the target control.
+            </remarks>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingButton.ExpandedText">
+            <summary>
+            Gets or sets the text shown when the target control is in the expanded state.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingButton.ContractedText">
+            <summary>
+            Gets or sets the text shown when the target control is in the contracted state.
+            </summary>
+            <remarks>
+            When left empty, the <see cref="P:KAOS.WebControls.ExpandingButton.ExpandedText"/> property value is used.
+            </remarks>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingButton.Controls">
+            <summary>
+            Overrides <see cref="P:System.Web.UI.Control.Controls"/>.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ExpandingButtonScriptUtil">
+            <summary>
+            The utility class which deals with the clientscript used by the ExpandingButton controls.
+            </summary>
+            <remarks>
+            This class is not neccessary for use of the controls.
+            It is public in case a developer wants to create their own expanding button that does not derive from the built in ones.
+            </remarks>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingButtonScriptUtil.RegisterScriptForControl(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control,System.String,System.String)">
+            <summary>
+            Does the actual regististration of the script with the page.
+            </summary>
+            <param name="expander">The control to be registered as an expanding button.</param>
+            <param name="target">The control to be targeted by the button.</param>
+            <param name="tracker">The control which tracks, on the clientside, the state of the target control.</param>
+            <param name="expandedValue">The value of the control in its expanded state.</param>
+            <param name="contractedValue">The value of the control in its contracted state.</param>
+        </member>
+        <member name="T:KAOS.WebControls.ExpandingCheckBox">
+            <summary>
+            A clientscript-enabled push-style button which toggles the visibility of another control on the page.
+            </summary>
+            <remarks>
+            This button has no server-side click event, as the action it performs is done on the clientside.
+            </remarks>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.CreateChildControls">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.CreateChildControls"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.OnPreRender(System.EventArgs)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)"/>
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.ApplyExpansionState">
+            <summary>
+            Applies the <see cref="P:KAOS.WebControls.ExpandingCheckBox.Expanded"/> value to the server control set by <see cref="P:KAOS.WebControls.ExpandingCheckBox.ControlToToggle"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.ClientExpanedStateChanged(System.Object,System.EventArgs)">
+            <summary>
+            when clientside rendering is enabled, this will alert the control to clientside changes in the Expanded state.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            If the button is clicked serverside, that means the clientscript didnt' run.
+            toggle the expansion now.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingCheckBox.RegisterClientScript">
+            <summary>
+            Registers the clientscript with the page.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingCheckBox.ControlToToggle">
+            <summary>
+            Gets or sets the ID of the control which is the target of the visibility-toggling behavior.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingCheckBox.Expanded">
+            <summary>
+            Gets or sets the expanded state of the target control.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingCheckBox.EnableClientScript">
+            <summary>
+            Gets or sets the indicator of whether clientscript is used for the behavior.
+            </summary>
+            <remarks>
+            When set to false, a postback is performed in order to set the visibility of the target control.
+            </remarks>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingCheckBox.Controls">
+            <summary>
+            Overrides <see cref="P:System.Web.UI.Control.Controls"/>.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ExpandingImageButton">
+            <summary>
+            A clientscript-enabled push-style button which toggles the visibility of another control on the page.
+            </summary>
+            <remarks>
+            This button has no server-side click event, as the action it performs is done on the clientside.
+            </remarks>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.CreateChildControls">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.CreateChildControls"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.OnPreRender(System.EventArgs)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)"/>.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)"/>
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)"/>.
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.ApplyExpansionState">
+            <summary>
+            Applies the <see cref="P:KAOS.WebControls.ExpandingImageButton.Expanded"/> value to the server control set by <see cref="P:KAOS.WebControls.ExpandingImageButton.ControlToToggle"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.ClientExpanedStateChanged(System.Object,System.EventArgs)">
+            <summary>
+            when clientside rendering is enabled, this will alert the control to clientside changes in the Expanded state.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.button_Click(System.Object,System.Web.UI.ImageClickEventArgs)">
+            <summary>
+            If clientscript is disabled, the button will cause a postback, which will need to be handled by changin the Expanded state.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingImageButton.RegisterClientScript">
+            <summary>
+            Registers the clientscript with the page.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.ControlToToggle">
+            <summary>
+            Gets or sets the ID of the control which is the target of the visibility-toggling behavior.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.Expanded">
+            <summary>
+            Gets or sets the expanded state of the target control.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.EnableClientScript">
+            <summary>
+            Gets or sets the indicator of whether clientscript is used for the behavior.
+            </summary>
+            <remarks>
+            When set to false, a postback is performed in order to set the visibility of the target control.
+            </remarks>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.ExpandedImageUrl">
+            <summary>
+            Gets or sets the url of the image shown when the target control is in the expanded state.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.ContractedImageUrl">
+            <summary>
+            Gets or sets the url of the image shown when the target control is in the contracted state.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.ExpandedAlternateText">
+            <summary>
+            Gets or sets the alt-text applied when the target control is in the expanded state.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.ContractedAlternateText">
+            <summary>
+            Gets or sets the alt-text applied when the target control is in the contracted state.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingImageButton.Controls">
+            <summary>
+            Overrides <see cref="P:System.Web.UI.Control.Controls"/>.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ExpandingLinkButton">
+            <summary>
+            A clientscript-enabled push-style button which toggles the visibility of another control on the page.
+            </summary>
+            <remarks>
+            This button has no server-side click event, as the action it performs is done on the clientside.
+            </remarks>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.CreateChildControls">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.CreateChildControls"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.OnPreRender(System.EventArgs)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)"/>.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)"/>
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Overrides <see cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)"/>.
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.ApplyExpansionState">
+            <summary>
+            Applies the <see cref="P:KAOS.WebControls.ExpandingLinkButton.Expanded"/> value to the server control set by <see cref="P:KAOS.WebControls.ExpandingLinkButton.ControlToToggle"/>.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.ClientExpanedStateChanged(System.Object,System.EventArgs)">
+            <summary>
+            when clientside rendering is enabled, this will alert the control to clientside changes in the Expanded state.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.button_Click(System.Object,System.EventArgs)">
+            <summary>
+            If clientscript is disabled, the button will cause a postback, which will need to be handled by changin the Expanded state.
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.ExpandingLinkButton.RegisterClientScript">
+            <summary>
+            Registers the clientscript with the page.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingLinkButton.ControlToToggle">
+            <summary>
+            Gets or sets the ID of the control which is the target of the visibility-toggling behavior.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingLinkButton.Expanded">
+            <summary>
+            Gets or sets the expanded state of the target control.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingLinkButton.EnableClientScript">
+            <summary>
+            Gets or sets the indicator of whether clientscript is used for the behavior.
+            </summary>
+            <remarks>
+            When set to false, a postback is performed in order to set the visibility of the target control.
+            </remarks>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingLinkButton.ExpandedText">
+            <summary>
+            Gets or sets the text shown when the target control is in the expanded state.
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingLinkButton.ContractedText">
+            <summary>
+            Gets or sets the text shown when the target control is in the contracted state.
+            </summary>
+            <remarks>
+            When left empty, the <see cref="P:KAOS.WebControls.ExpandingLinkButton.ExpandedText"/> property value is used.
+            </remarks>
+        </member>
+        <member name="P:KAOS.WebControls.ExpandingLinkButton.Controls">
+            <summary>
+            Overrides <see cref="P:System.Web.UI.Control.Controls"/>.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ImageHighLighting">
+            <summary>
+            Summary description for ImageHighLighting for IE only.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ImagePopUp">
+            <summary>
+            Summary description for ImagePopUp.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.Label">
+            <summary>
+            Descricao do Label
+            </summary>
+        </member>
+        <member name="M:KAOS.WebControls.Label.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Chama a funcao mudacorfonte() depois renderiza a base pai do controle
+            </summary>
+            <param name="output"> The HTML writer to write out to </param>
+        </member>
+        <member name="M:KAOS.WebControls.Label.mudacorfonte">
+            <summary>
+            Funcao que compara o valor do texto com o valor de comparacao especificado
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KAOS.WebControls.Label.CorMaiorQue">
+            <summary>
+            Selecione ou digite uma cor em hex da fonte para valor maior que o valor de comparacao
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.Label.CorMenorQue">
+            <summary>
+            Selecione ou digite uma cor em hex da fonte para valor menor que o valor de comparacao
+            </summary>
+        </member>
+        <member name="P:KAOS.WebControls.Label.ComparaCom">
+            <summary>
+            Digite o valor em decimal a ser comparado com o valor atual do textbox
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.ModalLink">
+            <summary>
+            Summary description for ModalValue.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.RichEdit">
+            <summary>
+            Summary description for RichEdit.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.RichEditDesign">
+            <summary>
+            Summary description for RichEditDesign.
+            </summary>
+        </member>
+        <member name="T:KAOS.WebControls.SmartNavigation">
+            <summary>
+            Summary description for SmartNavigation.
+            </summary>
+        </member>
+    </members>
+</doc>

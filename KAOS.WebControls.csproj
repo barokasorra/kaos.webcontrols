@@ -1,0 +1,716 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{1771D5D4-16A2-46DA-BB72-237E98EDAD44}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "KAOS.WebControls"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "KAOS.WebControls"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = "KAOS.WebControls.xml"
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Web.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Design.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ComboPopUp.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ComboPopUp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ContentBar.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ContentBar.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ContentBarDesign.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataGridGrouped.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DataGridGrouped.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Edit.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Edit.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditAutoComplete.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditAutoComplete.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditDate.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditDate.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditDate.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditDate.old.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditDatePopUp.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditDatePopUp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditEmail.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditEmail.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditMask.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditMask.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditMask.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditMoney.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditMoney.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditMoney.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditMoney.old.bak.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditMoney.old.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditNumber.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditNumber.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EditNumber.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditTime.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EditTime.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingButton.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExpandingButton.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingButtonScriptUtil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingButtonScriptUtil.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExpandingCheckBox.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExpandingCheckBox.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingCombo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingDivs.js"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExpandingImageButton.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExpandingImageButton.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingLinkButton.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExpandingLinkButton.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExpandingRadio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ImageHighLighting.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ImageHighLighting.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ImagePopUp.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ImagePopUp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "JavaScripUtil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Label.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Label.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ModalLink.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ModalLink.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ModalWindow.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RichEdit.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "RichEdit.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RichEditDesign.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SmartNavigation.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SmartNavigation.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "doc\instrucoes.txt"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "doc\utilizacao do ComboPopUp.txt"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\autocomplete\actb.js"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\cal.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\close.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\divider.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\drop1.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\drop2.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\left1.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\left2.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\popcalendar.js"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\right1.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\calendar\right2.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\contentbar\back.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\contentbar\back_table.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\contentbar\contentbar.css"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\contentbar\icon.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\contentbar\news.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\contentbar\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\blank.htm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\insert_table.htm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\palette.htm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\richtext.js"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\rte.css"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\bgcolor.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\blackdot.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\bold.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\centre.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\copy.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\cut.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\email.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\hr.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\hyperlink.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\image.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\indent.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\insert_table.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\italic.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\justifyfull.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\left_just.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\list.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\numbered_list.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\outdent.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\paste.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\redo.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\right_just.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\smiley.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\spellcheck.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\textcolor.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\underline.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit\images\undo.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\blank.htm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\insert_table.htm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\palette.htm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\richtext.js"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\rte.css"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\bgcolor.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\blackdot.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\bold.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\centre.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\copy.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\cut.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\email.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\hr.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\hyperlink.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\image.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\indent.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\insert_table.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\italic.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\justifyfull.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\left_just.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\list.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\numbered_list.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\outdent.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\paste.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\redo.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\right_just.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\smiley.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\spellcheck.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\textcolor.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\underline.gif"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "javascript\richedit_mod\images\undo.gif"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

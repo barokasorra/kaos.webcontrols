@@ -1,0 +1,27 @@
+body
+{margin: 0px;}
+
+a
+{background-color: transparent; color: #366EB2; text-decoration: underline;}
+
+a:hover
+{text-decoration: none;}
+
+.contentbar
+{ 
+	font-family: Verdana, sans-serif;
+	font-size: 14;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: solid 1px #6D86A4; 
+	text-align: center; 
+	/*background-color: #F6F8FB;*/
+	background-image:url(./back_table.gif)
+}
+
+.linknews
+{
+	font-family: Verdana, sans-serif;
+	font-size: 10;
+	font-weight: bold;
+}

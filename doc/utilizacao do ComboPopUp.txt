@@ -1,0 +1,15 @@
+=============================================================================
+if (!Page.IsPostBack) 
+{
+	this.ComboPopUp1.Lista = "a,b,c";
+	this.ComboPopUp1.LoadCombo();
+
+	//chamar rotina de pesquisa
+	Response.Write(this.ComboPopUp1.SelectedItem.Text);
+	//
+} 
+else
+{
+	this.ComboPopUp1.Lista = "a,b,c";			
+}
+=============================================================================
