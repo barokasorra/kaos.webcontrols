@@ -96,19 +96,36 @@ function actb(obj,evt,ca,noMSearch,nElemen){
 	var oldkeydownhandler = document.onkeydown;
 	var oldblurhandler = obj.onblur;
 	var oldkeypresshandler = obj.onkeypress;
+	var oldonchangehandler = obj.onchange;
 
 	document.onkeydown = actb_checkkey;
 	obj.onblur = actb_clear;
 	obj.onkeypress = actb_keypress;
+
+	//verifca c o onchange do obj contem a chamada de postback
+	var doPostBack = false;
+	var validWord = false;
+	if (actb_curr.onchange != null)
+	{
+		if (actb_curr.onchange.toString().indexOf('__doPostBack',0) != -1)
+		{
+			actb_curr.onchange = null;
+			doPostBack = true;
+		}
+		else
+		{
+			doPostBack = false;
+		}
+	}
 	
 	function actb_clear(evt){
 		if (!evt) evt = event;
 		document.onkeydown = oldkeydownhandler;
 		actb_curr.onblur = oldblurhandler;
 		actb_curr.onkeypress = oldkeypresshandler;
+		actb_curr.onchange = oldonchangehandler;
 		actb_removedisp();
-		verificaItem();
-		
+		verificaItem();	
 	}
 
 	function actb_parse(n){
@@ -416,8 +433,13 @@ function actb(obj,evt,ca,noMSearch,nElemen){
 		}
 		actb_mouse_on_list = 0;
 		actb_removedisp();
+		if (validWord && doPostBack) 
+		{
+			__doPostBack(actb_curr.name,'');
+		}
 	}
 	function actb_penter(){
+		validWord = false;
 		if (!actb_display) return;
 		actb_display = false;
 		var word = '';
@@ -426,6 +448,7 @@ function actb(obj,evt,ca,noMSearch,nElemen){
 			if (actb_bool[i]) c++;
 			if (c == actb_pos){
 				word = actb_keywords[i];
+				validWord = true;
 				break;
 			}
 		}
@@ -450,7 +473,7 @@ function actb(obj,evt,ca,noMSearch,nElemen){
 			}
 		}
 		if (!founded && actb_curr.value != '') {
-		alert("Item nao encontrado selecione um item valido"); 
+		alert("Item nao encontrado selecione um item valido."); 
 		//alert("Item n&atilde;o encontrado.Selecione um item v&aacute;lido");
 		//actb_mouse_on_list = 0;
 		actb_curr.focus();
