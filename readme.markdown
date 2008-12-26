@@ -1,6 +1,7 @@
 KAOS.WebControls
-luis@planobe.com.br
-jean@planobe.com.br
+===
+* luis@planobe.com.br
+* jean@planobe.com.br
 
 Biblioteca de controles para asp.net feito em C# e JavaScript. Release inicial em 11/03/2005. 
 Testado no framework 1.1. Desenvolvido no VS 2002, e VS 2003.
@@ -8,11 +9,11 @@ Compatibilidade com o ASP.NET 2.0 (não testado completamente).
 
 Controles disponiveis e recomendações
 
-(*) Todos os controles da série Edit possuem uma propriedade chamada AutoTab, que quando true, pula automaticamente para o próximo campo, quando atingir o MaxLength do Edit.
-(*) Todos os controles da série Edit possuem uma propriedade chamada ReadWrite que quando setada para false 
+* Todos os controles da série Edit possuem uma propriedade chamada AutoTab, que quando true, pula automaticamente para o próximo campo, quando atingir o MaxLength do Edit.
+* Todos os controles da série Edit possuem uma propriedade chamada ReadWrite que quando setada para false 
 "transforma" o textbox em um label. Todos possuem validação de RequiredFieldValidator e RangeValidator tbm, 
 não necessitando mais a utilização de validators em sua página.
-(*noFirefox) Não compativel com Firefox.
+* (*noFirefox) Não compativel com Firefox.
 
 ContentBar - componente html que é uma barra horizontal 100 % no topo da página com um menu a direita da tela que pode ser contraido ou expandido. Este menu na verdade é um Iframe, onde mostramos o conteúdo de outras páginas. O compomente possui a propriedade Src que é a url que desejamos abrir em nosso menu, Description que é a descrição que vai aparecer no centro da barra horizontal, outras propriedades referentes a caminho de icones que aparecerão alinhados a esquerda da barra horizontal, ClassTable que é o nome do estilo que será aplicada a barra horizontal, Contracted que permite especificarmos se o menu do lado direito aparecerá contraido ou não e TextLinkNews que é o texto que aparecerá em cima do menu do lado direito. Quando as propriedades referentes a caminho estiverem vazia os icones não aparecerão. A pasta ContentBar contém um estilo para a formatação da barra horizontal, e imagens recomendadas para sua utilização. Alguns estilos contidos na folha de estilo encontrada nesta pasta são integrados com o componente e são obrigatórios para sua correta vizualização.
 
@@ -64,13 +65,8 @@ irá controlar.
 
 ExpandingRadio e ExpandingCombo - Controles que permitem esconder e mostrar divs, dependendo da opção selecionada, no ComboBox ou no grupo de radios. Possuem uma propriedade chamada TextoItemDiv onde especificamos o controle das divs e qual condição.A estrutura é a seguinte: SELECTEDTEXT=DIVQUECONTROLAREMOS,SELECTEDTEXT=DIVQUECONTROLAREMOS e assim por diante,separando por virgula. Exemplo: item1=divdoitem1,item2=divdoitem2. Quando no caso do combo o selecteditemtext for igual a item1, a divdoitem1 aparecerá, e a divdoitem2 se esconderá e assim vice-versa. No caso do radio, a propriedade TextoItemDiv tem que estar igual em todos os radios do grupo. 
 
-==================================================================
-//POR FAVOR
-//ANTES DE SUGERIR QUALQUER CORREÇÃO OU RELATAR QUALQUER BUG LEIA O HISTÓRICO DE DESENVOLVIMENTO.
-==================================================================
-+- implementacao ou correcao de item já notificado.
-
-Histórico
+Histórico Pré Era do Versionamento
+===
 17/11/2006 - Release 2.4
 + Incluido propriedade enabled (true/false) no componente smartnavigation. Isto permite habilitar ou desabilitar o smartnavigation na página em tempo de execução. 
 + Relatado problemas na utilização de RichTextBox , no controle de abas da Microsoft + smartnavigation Microsoft. Recomenda-se utilizar RichTextBox com 
