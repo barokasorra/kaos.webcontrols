@@ -68,8 +68,8 @@ ExpandingRadio e ExpandingCombo - Controles que permitem esconder e mostrar divs
 Histórico Pré Era do Versionamento
 ===
 17/11/2006 - Release 2.4
-+ Incluido propriedade enabled (true/false) no componente smartnavigation. Isto permite habilitar ou desabilitar o smartnavigation na página em tempo de execução. 
-+ Relatado problemas na utilização de RichTextBox , no controle de abas da Microsoft + smartnavigation Microsoft. Recomenda-se utilizar RichTextBox com 
+* Incluido propriedade enabled (true/false) no componente smartnavigation. Isto permite habilitar ou desabilitar o smartnavigation na página em tempo de execução. 
+* Relatado problemas na utilização de RichTextBox , no controle de abas da Microsoft + smartnavigation Microsoft. Recomenda-se utilizar RichTextBox com 
 smartnavigation do framework KAOS.
 
 13/07/2006 - Release 2.3
