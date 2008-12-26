@@ -73,119 +73,119 @@ Histórico Pré Era do Versionamento
 smartnavigation do framework KAOS.
 
 13/07/2006 - Release 2.3
-+ ValidarClientSide e RequeridoClientSide do controle EditDatePopUp estavam como ReadOnly nao permitindo mudar em tempo de edicao. Ref: 28/12/2005
+* ValidarClientSide e RequeridoClientSide do controle EditDatePopUp estavam como ReadOnly nao permitindo mudar em tempo de edicao. Ref: 28/12/2005
 
 27/4/2006 - Release 2.0
-+ Corrigido pequeno problema em EditMask.js , que estava engolindo o caractere digitado , e trocando pelo simbolo especificado na mascara. Agora coloca-se o simbolo da mascara, e o caractere digitado tbm.
+* Corrigido pequeno problema em EditMask.js , que estava engolindo o caractere digitado , e trocando pelo simbolo especificado na mascara. Agora coloca-se o simbolo da mascara, e o caractere digitado tbm.
 
 28/12/2005
-+ Modificado a propriedade ReadOnly da propriedade ValidarClientSide para false, do controle Edit.cs(linha 173). Parece que todos os controles que estao herdando desta classe, mesmo sobreescrevendo esta propriedade para ReadOnly false, nao está permitindo a alteracao em design Time no Visual Studio.
+* Modificado a propriedade ReadOnly da propriedade ValidarClientSide para false, do controle Edit.cs(linha 173). Parece que todos os controles que estao herdando desta classe, mesmo sobreescrevendo esta propriedade para ReadOnly false, nao está permitindo a alteracao em design Time no Visual Studio.
 
 13/12/2005
-+ Havia me esquecido de colocar a tag ReadWrite = true na assinatura do componente EditDatePopUp causando erro de cast na hora de incluir o componente na ide. Isto ocorria pq o componente EditDate q estava dentro do webcontrol EditDatePopUp teve a assinatura modificada , adicionando ReadWrite
+* Havia me esquecido de colocar a tag ReadWrite = true na assinatura do componente EditDatePopUp causando erro de cast na hora de incluir o componente na ide. Isto ocorria pq o componente EditDate q estava dentro do webcontrol EditDatePopUp teve a assinatura modificada , adicionando ReadWrite
 
 7/12/2005
-+ A propriedade Alinhar do Edit estava como readonly. Alterada para property normal. Nao lembro pq estava assim ?
-+ O controle Edit, estava perdendo a propriedade ReadWrite entre os postbacks. Sobreescrita a funcao LoadPostData para recuperar o valor do ReadWrite do Edit, pois o TextBox ja implementa a interface IPostBackHandler.
+* A propriedade Alinhar do Edit estava como readonly. Alterada para property normal. Nao lembro pq estava assim ?
+* O controle Edit, estava perdendo a propriedade ReadWrite entre os postbacks. Sobreescrita a funcao LoadPostData para recuperar o valor do ReadWrite do Edit, pois o TextBox ja implementa a interface IPostBackHandler.
 
 6/12/2005
-+ Corrigido bug no EditAutoComplete que ao deixarmos a opcao ReadWrite como false ou seja nao editavel o mesmo se clicassemos em cima do campo e digitassemos alguma coisa a caixa de autocomplete aparecia. (linha 89, EditAutoComplete.cs)
-+ Mudado o style do Edit quando a opcao ReadWrite esta como false ou seja o componente está no modo label. O conteúdo do Edit fica em negrito. (linha 265,267, Edit.cs)
+* Corrigido bug no EditAutoComplete que ao deixarmos a opcao ReadWrite como false ou seja nao editavel o mesmo se clicassemos em cima do campo e digitassemos alguma coisa a caixa de autocomplete aparecia. (linha 89, EditAutoComplete.cs)
+* Mudado o style do Edit quando a opcao ReadWrite esta como false ou seja o componente está no modo label. O conteúdo do Edit fica em negrito. (linha 265,267, Edit.cs)
 
 17/11/2005
-+ Modificao da Lib para compilacao. Liberado release KAOS.WebControls
+* Modificao da Lib para compilacao. Liberado release KAOS.WebControls
 
 07/6/2005
-+ Alterado o nome da propriedade CaminhoIconeNews para CaminhoExpandedIconeNews.
-+ Adicionado a propriedade CaminhoContractedIconeNews que é usada para mostrar um outro Icone quando a barra está contraída.
+* Alterado o nome da propriedade CaminhoIconeNews para CaminhoExpandedIconeNews.
+* Adicionado a propriedade CaminhoContractedIconeNews que é usada para mostrar um outro Icone quando a barra está contraída.
 
 03/6/2005
-+ Retirado as alterações do dia 25/5/2005.
-+ Adicionado a propriedade ShowIconeLinkNews no ContentBar para ser usando nas configurações de segurança dos sistemas.
+* Retirado as alterações do dia 25/5/2005.
+* Adicionado a propriedade ShowIconeLinkNews no ContentBar para ser usando nas configurações de segurança dos sistemas.
 
 25/5/2005
-+ Adicionado a propriedade position:absolute ao style do ContentBar para corrigir problemas com relação ao posicionamento de outros componentes na página.
+* Adicionado a propriedade position:absolute ao style do ContentBar para corrigir problemas com relação ao posicionamento de outros componentes na página.
 
 6/5/2005
-+ Incluido os componentes ExpandingRadio e ExpandingCombo.
+* Incluido os componentes ExpandingRadio e ExpandingCombo.
 
 3/5/2005 - Release 1.0
-+ Release 1.0 liberado.
-+ Incluido o controle ContentBar.
-+ Corrigido bug na estrutura do ContentBar que carregava o iframe com a barra a direita toda vez que o usuario entrasse na pagina mesmo com a barra contraida. O usuario não veria a barra, por causa do display:none mas o conteúdo estaria lá, atrasando em muito o carregamento das páginas. Modificado para renderizar o frame inteiro e não só a propriedade display:block, quando a opção contracted = false. O jeito antigo com display:none é util ao utilizarmos js para controlar a barra do lado do cliente, mas muito demorado visto que devemos ir ao servidor para buscar noticias. 
+* Release 1.0 liberado.
+* Incluido o controle ContentBar.
+* Corrigido bug na estrutura do ContentBar que carregava o iframe com a barra a direita toda vez que o usuario entrasse na pagina mesmo com a barra contraida. O usuario não veria a barra, por causa do display:none mas o conteúdo estaria lá, atrasando em muito o carregamento das páginas. Modificado para renderizar o frame inteiro e não só a propriedade display:block, quando a opção contracted = false. O jeito antigo com display:none é util ao utilizarmos js para controlar a barra do lado do cliente, mas muito demorado visto que devemos ir ao servidor para buscar noticias. 
 
 2/5/2005
-+ Corrigido bug no no javascript do RichEdit referente a design. Do lado direito o componente aparecia uma área em branco que ao deixarmos o width em 100% aparecia uma barra de rolagem horizontal.
+* Corrigido bug no no javascript do RichEdit referente a design. Do lado direito o componente aparecia uma área em branco que ao deixarmos o width em 100% aparecia uma barra de rolagem horizontal.
 
 21/4/2005
-+ Corrigido bug quando utilizamos o RichEdit em UserControls ocorria um erro de javascript devido a diferença do nome do RichEdit no lado do cliente quando o mesmo está dentro de UserControls.
-+ Adicionado um script do RichEdit especifico para o CRM. Foram removidas várias opções de customização do texto. Basta adicionar a pasta richedit_crm no lugar da richedit se quiser o componente com menos opções. Não há problema nenhum em utilizar os dois componentes ao mesmo tempo, contando que na propriedade caminhoJs cada um esteja apontado para uma pasta.
+* Corrigido bug quando utilizamos o RichEdit em UserControls ocorria um erro de javascript devido a diferença do nome do RichEdit no lado do cliente quando o mesmo está dentro de UserControls.
+* Adicionado um script do RichEdit especifico para o CRM. Foram removidas várias opções de customização do texto. Basta adicionar a pasta richedit_crm no lugar da richedit se quiser o componente com menos opções. Não há problema nenhum em utilizar os dois componentes ao mesmo tempo, contando que na propriedade caminhoJs cada um esteja apontado para uma pasta.
 
 19/04/2005
-+ Modificada a font default do RichEdit para Verdana. A primeira vez que o componente carrega sua fonte é Verdana. Se darmos um postback com o componente vazio, o componente apaga a tag da font e retorna a fonte original.
-+ Corrigido bug referente quando existiam 2 ou mais controles RichEdit na mesma página. Novamente alterado a estrutura de como disparamos a function em js que pega os valores do RichEdit do lado do cliente.
+* Modificada a font default do RichEdit para Verdana. A primeira vez que o componente carrega sua fonte é Verdana. Se darmos um postback com o componente vazio, o componente apaga a tag da font e retorna a fonte original.
+* Corrigido bug referente quando existiam 2 ou mais controles RichEdit na mesma página. Novamente alterado a estrutura de como disparamos a function em js que pega os valores do RichEdit do lado do cliente.
 
 18/04/2005
-+ Verificado o problema de ViewState referente ao componente RichEdit. O tamanho do ViewState da página não se deve ao componente e sim as informações complementares, que carregam junto com a página.
-+ Corrigido bug no RichEdit, que não conseguia chamar o javascript para pegar o texto do lado do cliente em outros componentes além do botão. O problema era que outros componentes utilizam o javascript __doPostBack para passar valores pro servidor e no fim do __doPostBack encontramos um theform.submit(). Como o script do RichEdit estava registrado no onSubmit do form, de algum modo, a chamada do theform.submit() do __doPostBack não enchergava o javascript do RichEdit no OnSubmit do form, não atualizando o RichEdit e deixando o mesmo vazio na volta do servidor. O problema foi resolvido mudando a estrutura de como disparamos o evento que pega os valores do RichEdit do lado do cliente.
+* Verificado o problema de ViewState referente ao componente RichEdit. O tamanho do ViewState da página não se deve ao componente e sim as informações complementares, que carregam junto com a página.
+* Corrigido bug no RichEdit, que não conseguia chamar o javascript para pegar o texto do lado do cliente em outros componentes além do botão. O problema era que outros componentes utilizam o javascript __doPostBack para passar valores pro servidor e no fim do __doPostBack encontramos um theform.submit(). Como o script do RichEdit estava registrado no onSubmit do form, de algum modo, a chamada do theform.submit() do __doPostBack não enchergava o javascript do RichEdit no OnSubmit do form, não atualizando o RichEdit e deixando o mesmo vazio na volta do servidor. O problema foi resolvido mudando a estrutura de como disparamos o evento que pega os valores do RichEdit do lado do cliente.
 
 15/04/2005
-+ Incluido o controle MaskedEdit que permite especificar uma máscara para entrada de dados.
+* Incluido o controle MaskedEdit que permite especificar uma máscara para entrada de dados.
 
 12/04/2005
-+- Modificado a estrutura do RichEdit que não estava funcionando em UserControls, mas agora está correto. (idéia do wagner ...)
-+- Incluido instrucoes de como utilizar o ComboPopUp com relacao ao bug do primeiro item da lista no Page Load. Na verdade não é um bug e sim um problema estrutural.
+* Modificado a estrutura do RichEdit que não estava funcionando em UserControls, mas agora está correto. (idéia do wagner ...)
+* Incluido instrucoes de como utilizar o ComboPopUp com relacao ao bug do primeiro item da lista no Page Load. Na verdade não é um bug e sim um problema estrutural.
 
 11/04/2005
-- Implementar propriedade no ComboPopUp para pegar o primeiro item da lista.
-+- Corrigir bug no RichEdit que não está funcionando dentro de UserControls.
-+ Corrigido bug no ComboPopUp que não está pegando valores da modal com a url do CRM. (o problema era de autenticação na página)
-+ Adicionado o controle DataGridGrouped. Bug na identação ao utilizarmos o index 0 das colunas. Outros indexes em qualquer ordem funcionam normalmente.
+* Implementar propriedade no ComboPopUp para pegar o primeiro item da lista.
+* Corrigir bug no RichEdit que não está funcionando dentro de UserControls.
+* Corrigido bug no ComboPopUp que não está pegando valores da modal com a url do CRM. (o problema era de autenticação na página)
+* Adicionado o controle DataGridGrouped. Bug na identação ao utilizarmos o index 0 das colunas. Outros indexes em qualquer ordem funcionam normalmente.
 
 07/04/2005
-+ Corrigido bug no ComboPopUp que impedia de utilizar o selecteditem no Page Load da página.
-+ Adicionado o RichEdit um editor de html que pode ser utilizado dentro de qualquer WebForm. Compativel com Firefox e IE. Para utiliza-lo coloque validationRequest=false na diretiva <%@ Page %> do aspx.
-+ Adicionado uma propriedade no ComboPopUp que permite pegar o valor de retorno do hidden depois do postback.
+* Corrigido bug no ComboPopUp que impedia de utilizar o selecteditem no Page Load da página.
+* Adicionado o RichEdit um editor de html que pode ser utilizado dentro de qualquer WebForm. Compativel com Firefox e IE. Para utiliza-lo coloque validationRequest=false na diretiva <%@ Page %> do aspx.
+* Adicionado uma propriedade no ComboPopUp que permite pegar o valor de retorno do hidden depois do postback.
  
 05/04/2005
-+ Adicionado o SmartNavigation que funciona tanto no Firefox quanto no IE.
-+ Corrigido bug no EditAutoComplete que permitia aparecer a lista de autocomplete do windows e a lista de autocomplete do componente ao mesmo tempo.
+* Adicionado o SmartNavigation que funciona tanto no Firefox quanto no IE.
+* Corrigido bug no EditAutoComplete que permitia aparecer a lista de autocomplete do windows e a lista de autocomplete do componente ao mesmo tempo.
 
 04/04/2005
-+ Adicionado o evento SelectIndexChanged no ComboPopUp permitindo programar um evento no controle do lado do servidor mantendo o evento do lado do client tbm.
-+ Modificado o script de data do controle EditDate.
-+ Modificado a propriedade Lista que agora permite passarmos além do TextField, o ValueField para o combo. A funcao listaModificada retorna agora o TextField e ValueField no formato especificado. Ex : "item1;01,item2;02,item3;03"
+* Adicionado o evento SelectIndexChanged no ComboPopUp permitindo programar um evento no controle do lado do servidor mantendo o evento do lado do client tbm.
+* Modificado o script de data do controle EditDate.
+* Modificado a propriedade Lista que agora permite passarmos além do TextField, o ValueField para o combo. A funcao listaModificada retorna agora o TextField e ValueField no formato especificado. Ex : "item1;01,item2;02,item3;03"
 
 01/04/2005
-+ Adição da propriedade AutoTab em todos os controles da série edit. Permite pular automaticamente para o próximo campo quando atinge o MaxLength.
-+ Incluido uma validação do lado do cliente no controle EditAutoComplete que quando o usuário tenta digitar um item que não está na tabela, dispara um alert, pedindo para ele escolher um item válido. 
+* Adição da propriedade AutoTab em todos os controles da série edit. Permite pular automaticamente para o próximo campo quando atinge o MaxLength.
+* Incluido uma validação do lado do cliente no controle EditAutoComplete que quando o usuário tenta digitar um item que não está na tabela, dispara um alert, pedindo para ele escolher um item válido. 
 
 31/03/2005 - Release 0.9
-+ Release 0.9 liberado. O pulo no número de versões é devido, as inúmeras correções de bugs e inclusões que este release teve.
-+ Inclusão dos controles: ComboPopUp, ImageHighLighting, ImagePopUp, ModalLink, EditAutoComplete. Destes o único compativel com Firefox é o EditAutoComplete. A funcionalidade dos outros se perde ao convertermos os demais para Firefox, devido a não existência de janelas modais no Firefox na versão atual 1.0.2
-- Corrigir bug no ComboPopUp que quando não temos nenhum item no combo não é possivel abrir a janela outros devido ao index não mudar. O controle dispara o evento no change. (encontrar outra forma de disparar o evento?)
-- Inclusão de autovalidação do lado cliente no controle EditAutoComplete permitindo ao usuário selecionar ou digitar apenas um item que esteja na tabela que aparece embaixo do mesmo.
-- Não mostrar a classe ModalWindow no ToolBox pois ela serve apenas para ser herdada
+* Release 0.9 liberado. O pulo no número de versões é devido, as inúmeras correções de bugs e inclusões que este release teve.
+* Inclusão dos controles: ComboPopUp, ImageHighLighting, ImagePopUp, ModalLink, EditAutoComplete. Destes o único compativel com Firefox é o EditAutoComplete. A funcionalidade dos outros se perde ao convertermos os demais para Firefox, devido a não existência de janelas modais no Firefox na versão atual 1.0.2
+* Corrigir bug no ComboPopUp que quando não temos nenhum item no combo não é possivel abrir a janela outros devido ao index não mudar. O controle dispara o evento no change. (encontrar outra forma de disparar o evento?)
+* Inclusão de autovalidação do lado cliente no controle EditAutoComplete permitindo ao usuário selecionar ou digitar apenas um item que esteja na tabela que aparece embaixo do mesmo.
+* Não mostrar a classe ModalWindow no ToolBox pois ela serve apenas para ser herdada
 
 18/03/2005 - Release 0.2
-+ Release 0.2 liberado
-+ Inclusão da maior funcionalidade até agora, permitindo especificar entre lado cliente e lado servidor para cada validação.
-+ Inclusão dos controles EditTime e EditEmail e mudança na nomenclatura dos componentes acrescentando o prefixo  na frente do nome atual
+* Release 0.2 liberado
+* Inclusão da maior funcionalidade até agora, permitindo especificar entre lado cliente e lado servidor para cada validação.
+* Inclusão dos controles EditTime e EditEmail e mudança na nomenclatura dos componentes acrescentando o prefixo  na frente do nome atual
 
 17/03/2005
-+ Corrigido bug no Edit ao selecionarmos a validação do lado do servidor, quando setamos readwrite para false, o controle virava "label" mesmo sem ser válido.
-+ Adição do EditTime e EditEmail
+* Corrigido bug no Edit ao selecionarmos a validação do lado do servidor, quando setamos readwrite para false, o controle virava "label" mesmo sem ser válido.
+* Adição do EditTime e EditEmail
 
 16/03/2005
-- Corrigir bug no ExpandCheckBox que ao inserirmos um panel e 1 botao dentro a primeira vez que clicamos no botão o panel se esconde automaticamente, aparentemente parece ser só na primeira vez.
-- Corrigir bug no Edit que ao selecionarmos a validação do lado do servidor, quando setamos readwrite para false, o controle vira "label" mesmo sem ser válido.
+* Corrigir bug no ExpandCheckBox que ao inserirmos um panel e 1 botao dentro a primeira vez que clicamos no botão o panel se esconde automaticamente, aparentemente parece ser só na primeira vez.
+* Corrigir bug no Edit que ao selecionarmos a validação do lado do servidor, quando setamos readwrite para false, o controle vira "label" mesmo sem ser válido.
 
 14/03/2005
-+ Corrigido bug no javascript DataUtil que impedia de selecionarmos uma data no input e digitarmos outro valor sobre ela
-+ Substituido javascript que fazia a máscara do EdiNumber, agora quando digitamos 1, o java não altera para 1 centavo como estava antigamente.
-- Corrigir bug no EditDatePopUp que quando outro campo ganhava foco com o calendário aberto, o mesmo não fechava.
+* Corrigido bug no javascript DataUtil que impedia de selecionarmos uma data no input e digitarmos outro valor sobre ela
+* Substituido javascript que fazia a máscara do EdiNumber, agora quando digitamos 1, o java não altera para 1 centavo como estava antigamente.
+* Corrigir bug no EditDatePopUp que quando outro campo ganhava foco com o calendário aberto, o mesmo não fechava.
 
 11/03/2005 - Release 0.1
-- Bug no ExpandedCheckBox que ao setarmos EnableClientScript para false não funciona corretamente. Não afeta em nada 
+* Bug no ExpandedCheckBox que ao setarmos EnableClientScript para false não funciona corretamente. Não afeta em nada 
 o funcionamento correto do compomente quando setado para true.
-+ Primeiro release liberado.
+* Primeiro release liberado.
