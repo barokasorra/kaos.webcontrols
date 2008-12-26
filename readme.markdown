@@ -72,7 +72,7 @@ Histórico Pré Era do Versionamento
 * Relatado problemas na utilização de RichTextBox , no controle de abas da Microsoft + smartnavigation Microsoft. Recomenda-se utilizar RichTextBox com 
 smartnavigation do framework KAOS.
 
-13/07/2006 - Release 2.3 
+13/07/2006 - Release 2.3
 * ValidarClientSide e RequeridoClientSide do controle EditDatePopUp estavam como ReadOnly nao permitindo mudar em tempo de edicao. Ref: 28/12/2005
 
 27/4/2006 - Release 2.0
