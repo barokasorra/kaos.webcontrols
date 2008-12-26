@@ -73,7 +73,8 @@ Histórico Pré Era do Versionamento
 smartnavigation do framework KAOS.
 
 13/07/2006 - Release 2.3
-- ValidarClientSide e RequeridoClientSide do controle EditDatePopUp estavam como ReadOnly nao permitindo mudar em tempo de edicao. Ref: 28/12/2005
+
+* ValidarClientSide e RequeridoClientSide do controle EditDatePopUp estavam como ReadOnly nao permitindo mudar em tempo de edicao. Ref: 28/12/2005
 
 27/4/2006 - Release 2.0
 * Corrigido pequeno problema em EditMask.js , que estava engolindo o caractere digitado , e trocando pelo simbolo especificado na mascara. Agora coloca-se o simbolo da mascara, e o caractere digitado tbm.
