@@ -68,6 +68,7 @@ ExpandingRadio e ExpandingCombo - Controles que permitem esconder e mostrar divs
 Histórico Pré Era do Versionamento
 ===
 17/11/2006 - Release 2.4
+
 * Incluido propriedade enabled (true/false) no componente smartnavigation. Isto permite habilitar ou desabilitar o smartnavigation na página em tempo de execução. 
 * Relatado problemas na utilização de RichTextBox , no controle de abas da Microsoft + smartnavigation Microsoft. Recomenda-se utilizar RichTextBox com 
 smartnavigation do framework KAOS.
@@ -77,12 +78,15 @@ smartnavigation do framework KAOS.
 * ValidarClientSide e RequeridoClientSide do controle EditDatePopUp estavam como ReadOnly nao permitindo mudar em tempo de edicao. Ref: 28/12/2005
 
 27/4/2006 - Release 2.0
+
 * Corrigido pequeno problema em EditMask.js , que estava engolindo o caractere digitado , e trocando pelo simbolo especificado na mascara. Agora coloca-se o simbolo da mascara, e o caractere digitado tbm.
 
 28/12/2005
+
 * Modificado a propriedade ReadOnly da propriedade ValidarClientSide para false, do controle Edit.cs(linha 173). Parece que todos os controles que estao herdando desta classe, mesmo sobreescrevendo esta propriedade para ReadOnly false, nao está permitindo a alteracao em design Time no Visual Studio.
 
 13/12/2005
+
 * Havia me esquecido de colocar a tag ReadWrite = true na assinatura do componente EditDatePopUp causando erro de cast na hora de incluir o componente na ide. Isto ocorria pq o componente EditDate q estava dentro do webcontrol EditDatePopUp teve a assinatura modificada , adicionando ReadWrite
 
 7/12/2005
@@ -94,6 +98,7 @@ smartnavigation do framework KAOS.
 * Mudado o style do Edit quando a opcao ReadWrite esta como false ou seja o componente está no modo label. O conteúdo do Edit fica em negrito. (linha 265,267, Edit.cs)
 
 17/11/2005
+
 * Modificao da Lib para compilacao. Liberado release KAOS.WebControls
 
 07/6/2005
@@ -105,9 +110,11 @@ smartnavigation do framework KAOS.
 * Adicionado a propriedade ShowIconeLinkNews no ContentBar para ser usando nas configurações de segurança dos sistemas.
 
 25/5/2005
+
 * Adicionado a propriedade position:absolute ao style do ContentBar para corrigir problemas com relação ao posicionamento de outros componentes na página.
 
 6/5/2005
+
 * Incluido os componentes ExpandingRadio e ExpandingCombo.
 
 3/5/2005 - Release 1.0
@@ -116,6 +123,7 @@ smartnavigation do framework KAOS.
 * Corrigido bug na estrutura do ContentBar que carregava o iframe com a barra a direita toda vez que o usuario entrasse na pagina mesmo com a barra contraida. O usuario não veria a barra, por causa do display:none mas o conteúdo estaria lá, atrasando em muito o carregamento das páginas. Modificado para renderizar o frame inteiro e não só a propriedade display:block, quando a opção contracted = false. O jeito antigo com display:none é util ao utilizarmos js para controlar a barra do lado do cliente, mas muito demorado visto que devemos ir ao servidor para buscar noticias. 
 
 2/5/2005
+
 * Corrigido bug no no javascript do RichEdit referente a design. Do lado direito o componente aparecia uma área em branco que ao deixarmos o width em 100% aparecia uma barra de rolagem horizontal.
 
 21/4/2005
@@ -131,6 +139,7 @@ smartnavigation do framework KAOS.
 * Corrigido bug no RichEdit, que não conseguia chamar o javascript para pegar o texto do lado do cliente em outros componentes além do botão. O problema era que outros componentes utilizam o javascript __doPostBack para passar valores pro servidor e no fim do __doPostBack encontramos um theform.submit(). Como o script do RichEdit estava registrado no onSubmit do form, de algum modo, a chamada do theform.submit() do __doPostBack não enchergava o javascript do RichEdit no OnSubmit do form, não atualizando o RichEdit e deixando o mesmo vazio na volta do servidor. O problema foi resolvido mudando a estrutura de como disparamos o evento que pega os valores do RichEdit do lado do cliente.
 
 15/04/2005
+
 * Incluido o controle MaskedEdit que permite especificar uma máscara para entrada de dados.
 
 12/04/2005
